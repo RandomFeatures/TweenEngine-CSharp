@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62A6BDAB-0CA1-4A9E-B039-C8F8637E7655}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TweenEngine</RootNamespace>
+    <AssemblyName>TweenEngine</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="examples\Program.cs" />
+    <Compile Include="examples\TweenableParticule.cs" />
+    <Compile Include="utils\Pool.cs" />
+    <Compile Include="TweenEquation.cs" />
+    <Compile Include="equations\Back.cs" />
+    <Compile Include="equations\Linear.cs" />
+    <Compile Include="equations\Expo.cs" />
+    <Compile Include="equations\Bounce.cs" />
+    <Compile Include="equations\Circ.cs" />
+    <Compile Include="equations\Cubic.cs" />
+    <Compile Include="equations\Elastic.cs" />
+    <Compile Include="equations\Quad.cs" />
+    <Compile Include="equations\Quart.cs" />
+    <Compile Include="equations\Quint.cs" />
+    <Compile Include="equations\Sine.cs" />
+    <Compile Include="TweenCallback.cs" />
+    <Compile Include="Tweenable.cs" />
+    <Compile Include="TweenTypes.cs" />
+    <Compile Include="TweenGroup.cs" />
+    <Compile Include="TweenManager.cs" />
+    <Compile Include="Tween.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+</Project>
