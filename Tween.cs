@@ -12,16 +12,6 @@ namespace TweenEngine
  * @see TweenGroup
  * @author Aurelien Ribon (aurelien.ribon@gmail.com)
  */
-
-    /*
-     * This is a port of Aurelien Ribon amazing Universal Tween Engine to C#
-     * I did the port back in 2012 and it has not been maintained. I found the Universal Tween Engine
-     * to be very useful in my Android games. So when I started picking up C# again I decided to port/recreate it incase
-     * I decided to make some more games.
-     * You can find the original code here https://code.google.com/archive/p/java-universal-tween-engine/downloads
-     * The author's blog page about the code here http://www.aurelienribon.com/blog/projects/universal-tween-engine/
-     */
-
     public class Tween
 {
     // -------------------------------------------------------------------------
