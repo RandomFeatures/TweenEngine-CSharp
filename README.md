@@ -2,7 +2,7 @@
 
 This is a port of Aurelien Ribon amazing Universal Tween Engine to C#
 I did the port back in 2012 and it has not been maintained. I found the Universal Tween Engine to be very useful in my Android games. 
-So when I started picking up C# again I decided to port/recreate it just incase I decided to make more games.
+So when I started picking up C# again I decided to port/recreate it just in case I decided to make more games.
 
 ## Original Code
 
@@ -27,8 +27,7 @@ Tween.From(myObject, PositionType.XY, 500, Quad.Inout).SetTarget(200).Delay(1000
 ```
 
 The following example will move the target horizontal position from its current location to x = 200, then from x = 200 to x = 100, and finally from
-x = 100 to x = 200, but this last transition will only occur 1000ms after the previous one.Notice the ".sequence()" method call, if it has not been
-called, the 3 tweens would have started together, and not one after the other.
+x = 100 to x = 200, but this last transition will only occur 1000ms after the previous one. Notice the ".sequence()" method call, if it has not been called, the 3 tweens would have started together, and not one after the other.
 ```
 new TweenGroup().Pack(new Tween[]
 	{
